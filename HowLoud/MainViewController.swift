@@ -20,16 +20,23 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.gauge.maxValue = CGFloat(DecibelMeter.MaxValue)
-        self.gauge.minValue = CGFloat(DecibelMeter.MinValue)
-        self.minValueLabel.text = presenter.decibelMeterMinValue
-        self.maxValueLabel.text = presenter.decibelMeterMaxValue
+        setupUI()
+        /* As the decibel meter in the presenter constantly emits data,
+           thus I added a callback so that the view controller
+           can get data for its presentation
+         */
         self.presenter.subscribeDecibelInfo { [unowned self] (avgSpl, avgInfo, peakInfo) in
             self.gauge.value = avgSpl
             self.avgSplLabel.text = avgInfo
             self.peakSplLabel.text = peakInfo
         }
+    }
+    
+    private func setupUI() {
+        gauge.maxValue = CGFloat(DecibelMeter.MaxValue)
+        gauge.minValue = CGFloat(DecibelMeter.MinValue)
+        minValueLabel.text = presenter.decibelMeterMinValue
+        maxValueLabel.text = presenter.decibelMeterMaxValue
     }
     
     override func didReceiveMemoryWarning() {
