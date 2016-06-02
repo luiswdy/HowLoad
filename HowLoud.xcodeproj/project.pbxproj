@@ -10,6 +10,7 @@
 		E93746F01CEC727C00092378 /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746EF1CEC727C00092378 /* Gauge.swift */; };
 		E93746F21CEC7BE500092378 /* Gauge.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93746F11CEC7BE500092378 /* Gauge.xib */; };
 		E96AEB721CFFD19D00BDE609 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96AEB711CFFD19D00BDE609 /* MainPresenter.swift */; };
+		E96AEB781D00057A00BDE609 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96AEB7A1D00057A00BDE609 /* Localizable.strings */; };
 		E9A90B381CD32A6600FC49A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A90B371CD32A6600FC49A3 /* AppDelegate.swift */; };
 		E9A90B3A1CD32A6600FC49A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A90B391CD32A6600FC49A3 /* MainViewController.swift */; };
 		E9A90B3D1CD32A6600FC49A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A90B3B1CD32A6600FC49A3 /* Main.storyboard */; };
@@ -42,6 +43,11 @@
 		E93746EF1CEC727C00092378 /* Gauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gauge.swift; sourceTree = "<group>"; };
 		E93746F11CEC7BE500092378 /* Gauge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Gauge.xib; sourceTree = "<group>"; };
 		E96AEB711CFFD19D00BDE609 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainPresenter.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E96AEB731D00044600BDE609 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		E96AEB751D00048100BDE609 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E96AEB791D00057A00BDE609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96AEB7B1D00057D00BDE609 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96AEB7C1D00057E00BDE609 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E9A90B341CD32A6600FC49A3 /* HowLoud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowLoud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A90B371CD32A6600FC49A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A90B391CD32A6600FC49A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -134,6 +140,7 @@
 				E9A90B431CD32A6600FC49A3 /* Info.plist */,
 				E93746EF1CEC727C00092378 /* Gauge.swift */,
 				E93746F11CEC7BE500092378 /* Gauge.xib */,
+				E96AEB7A1D00057A00BDE609 /* Localizable.strings */,
 			);
 			path = HowLoud;
 			sourceTree = "<group>";
@@ -243,6 +250,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = E9A90B2B1CD32A6600FC49A3;
 			productRefGroup = E9A90B351CD32A6600FC49A3 /* Products */;
@@ -262,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A90B3F1CD32A6600FC49A3 /* Assets.xcassets in Resources */,
+				E96AEB781D00057A00BDE609 /* Localizable.strings in Resources */,
 				E9A90B3D1CD32A6600FC49A3 /* Main.storyboard in Resources */,
 				E93746F21CEC7BE500092378 /* Gauge.xib in Resources */,
 			);
@@ -328,10 +337,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E96AEB7A1D00057A00BDE609 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96AEB791D00057A00BDE609 /* Base */,
+				E96AEB7B1D00057D00BDE609 /* en */,
+				E96AEB7C1D00057E00BDE609 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E9A90B3B1CD32A6600FC49A3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E9A90B3C1CD32A6600FC49A3 /* Base */,
+				E96AEB731D00044600BDE609 /* zh-Hant */,
+				E96AEB751D00048100BDE609 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

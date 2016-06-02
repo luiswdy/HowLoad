@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MEd-Bb-jP2"; */
+"MEd-Bb-jP2.text" = "Label";
+
+/* Class = "UILabel"; text = "AVG: ---"; ObjectID = "lLT-uB-W3P"; */
+"lLT-uB-W3P.text" = "AVG: ---";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vgX-uI-aUX"; */
+"vgX-uI-aUX.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "wJ1-4e-wSm"; */
+"wJ1-4e-wSm.normalTitle" = "Start";
+
+/* Class = "UIButton"; selectedTitle = "Pause"; ObjectID = "wJ1-4e-wSm"; */
+"wJ1-4e-wSm.selectedTitle" = "Pause";
+
+/* Class = "UILabel"; text = "Peak: ---"; ObjectID = "yMN-qe-6kI"; */
+"yMN-qe-6kI.text" = "Peak: ---";

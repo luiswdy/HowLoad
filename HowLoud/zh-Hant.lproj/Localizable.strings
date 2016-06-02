@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  HowLoud
+
+  Created by Luis Wu on 6/2/16.
+  Copyright © 2016 Luis Wu. All rights reserved.
+*/
+
+"gauge_range_format_string" = "%d dB";
+"avg_format_string" = "平均: %.2f dB";
+"peak_format_string" = "峰值: %.2f dB";
