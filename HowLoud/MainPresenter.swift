@@ -15,18 +15,18 @@ class MainPresenter {
     
     var decibelMeterMinValue: String? {
         get {
-            return String(format: "%d dB", _decibelMeterMinValue)
+            return String(format: NSLocalizedString("gauge_range_format_string", comment: "format string"), _decibelMeterMinValue)
         }
     }
     var decibelMeterMaxValue: String? {
         get {
-            return String(format: "%d dB", _decibelMeterMaxValue)
+            return String(format: NSLocalizedString("gauge_range_format_string", comment: "format string"), _decibelMeterMaxValue)
         }
     }
     
     lazy var decibelMeter: DecibelMeter = DecibelMeter(dBHandler: { [weak self] (avgSpl, peakSpl) in
-        let avgInfo = String(format: "AVG: %.2f dB", avgSpl)
-        let peakInfo = String(format: "Peak: %.2f dB", peakSpl)
+        let avgInfo = String(format: NSLocalizedString("avg_format_string",comment: "format string"), avgSpl)
+        let peakInfo = String(format: NSLocalizedString("peak_format_string",comment: "format string"), peakSpl)
         self?.decibelInfoClosure?(CGFloat(avgSpl), avgInfo, peakInfo)
         })
     
