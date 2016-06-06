@@ -9,3 +9,6 @@
 "gauge_range_format_string" = "%d dB";
 "avg_format_string" = "平均: %.2f dB";
 "peak_format_string" = "峰值: %.2f dB";
+"mic_perm_req" = "需要麥克風授權";
+"mic_perm_description" = "請至 \"設定 > 隱私權 > 麥克風 > %@\" 開啟授權。";
+"got_it" = "瞭解";

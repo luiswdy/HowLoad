@@ -9,3 +9,6 @@
 "gauge_range_format_string" = "%d dB";
 "avg_format_string" = "AVG: %.2f dB";
 "peak_format_string" = "Peak: %.2f dB";
+"mic_perm_req" = "Microphone permission required";
+"mic_perm_description" = "To allow measuring, go \"Settings > Privacy > Microphone > %@\" and grant the permission";
+"got_it" = "Got it";

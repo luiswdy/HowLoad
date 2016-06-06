@@ -32,6 +32,10 @@ class DecibelMeter {
     private let dBHandler: (Float, Float) -> Void
     private let samplingInterval: NSTimeInterval
     
+    lazy var isMicGranted: Bool = {
+        return AVAudioSession.sharedInstance().recordPermission() == .Granted
+    }()
+    
     init(dBHandler: (Float, Float) -> Void, samplingRate: Float = Args.defaultSamplingRate, samplingInterval: NSTimeInterval = Args.defaultSamplingInteval) {
         // check microphone authorization
         self.samplingInterval = samplingInterval

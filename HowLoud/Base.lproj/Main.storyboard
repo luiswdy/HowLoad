@@ -114,17 +114,6 @@
                                     <rect key="frame" x="30" y="40" width="740" height="370"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-4e-wSm">
-                                <rect key="frame" x="536" y="550" width="34" height="30"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" title="Pause"/>
-                                <connections>
-                                    <action selector="toggleMeasuring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1B-1U-b3W"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Peak: ---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-qe-6kI" userLabel="peak">
                                 <rect key="frame" x="265" y="381" width="70" height="21"/>
                                 <constraints>
@@ -180,6 +169,22 @@
                                     <rect key="frame" x="30" y="40" width="740" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-4e-wSm">
+                                <rect key="frame" x="520" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="a4p-Cu-MoC"/>
+                                    <constraint firstAttribute="height" constant="50" id="nOs-Ht-Mr9"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                <state key="normal" image="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="Pause"/>
+                                <connections>
+                                    <action selector="toggleMeasuring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1B-1U-b3W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.85490196078431369" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -332,7 +337,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="423"/>
+            <point key="canvasLocation" x="373" y="423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pause" width="120" height="120"/>
+        <image name="Start" width="120" height="120"/>
+    </resources>
 </document>

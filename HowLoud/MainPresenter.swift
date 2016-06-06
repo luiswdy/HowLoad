@@ -34,6 +34,10 @@ class MainPresenter {
         decibelInfoClosure = closure
     }
     
+    func allowMic() -> Bool {
+        return decibelMeter.isMicGranted
+    }
+    
     func toggleMeasuring() -> Bool {
         if decibelMeter.isMeasuring() {
             decibelMeter.stopMeasuring()

@@ -32,11 +32,20 @@ class MainViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        // check if the app has permission accessing the microphone
+        checkMicPermission()
+    }
+    
     private func setupUI() {
         gauge.maxValue = CGFloat(DecibelMeter.MaxValue)
         gauge.minValue = CGFloat(DecibelMeter.MinValue)
         minValueLabel.text = presenter.decibelMeterMinValue
         maxValueLabel.text = presenter.decibelMeterMaxValue
+        toggleButton.layer.cornerRadius = toggleButton.bounds.size.width / 2
+        toggleButton.layer.borderWidth = 2
+        toggleButton.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +55,17 @@ class MainViewController: UIViewController {
     
     @IBAction func toggleMeasuring(sender: UIButton) {
         sender.selected = presenter.toggleMeasuring()
+    }
+    
+    private func checkMicPermission() {
+        if !presenter.allowMic(){
+            let appName = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as! String
+            let micAlertViewController = UIAlertController.init(title: NSLocalizedString("mic_perm_req", comment: ""),
+                                   message: String(format: NSLocalizedString("mic_perm_description", comment: ""), appName),
+                                   preferredStyle: .Alert)
+            micAlertViewController.addAction(UIAlertAction(title: NSLocalizedString("got_it", comment: ""), style: .Default, handler: nil))
+            self.presentViewController(micAlertViewController, animated: true, completion: nil)
+        }
     }
 }
 
