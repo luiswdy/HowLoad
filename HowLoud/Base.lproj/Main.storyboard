@@ -25,11 +25,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="30" y="289" width="42" height="21"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="30" y="348" width="42" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEd-Bb-jP2" userLabel="max">
@@ -37,81 +34,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="528" y="289" width="42" height="21"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="728" y="348" width="42" height="21"/>
-                                </variation>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7Q-Eh-kFj" customClass="Gauge" customModule="HowLoud" customModuleProvider="target">
-                                <rect key="frame" x="30" y="40" width="540" height="270"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="K7Q-Eh-kFj" secondAttribute="height" multiplier="2:1" id="eTu-V7-yFF"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="needleColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
-                                        <real key="value" value="27"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="needleWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                        <real key="value" value="160"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arcOutlineWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="arcOutlineColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationUnit">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationLength">
-                                        <integer key="value" value="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="additionalNeedleLength">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="eTu-V7-yFF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="eTu-V7-yFF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="eTu-V7-yFF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="eTu-V7-yFF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="30" y="40" width="740" height="370"/>
-                                </variation>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-4e-wSm">
                                 <rect key="frame" x="275" y="437" width="50" height="50"/>
                                 <constraints>
@@ -148,6 +74,12 @@
                                         <include reference="cva-0z-ozx"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Cfb-2O-ghe"/>
+                                        <include reference="cva-0z-ozx"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="toggleMeasuring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1B-1U-b3W"/>
                                 </connections>
@@ -166,9 +98,6 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="30" y="40" width="740" height="21"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -241,6 +170,87 @@
                                         <include reference="kWM-6z-vYQ"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Lha-SD-yBb"/>
+                                        <include reference="d2j-bB-S3C"/>
+                                        <include reference="m7n-wd-1nb"/>
+                                        <include reference="3rh-EW-MbS"/>
+                                        <include reference="Hn7-dn-amJ"/>
+                                        <include reference="g7z-Tq-kRE"/>
+                                        <include reference="kWM-6z-vYQ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K7Q-Eh-kFj" customClass="Gauge" customModule="HowLoud" customModuleProvider="target">
+                                <rect key="frame" x="30" y="40" width="540" height="270"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K7Q-Eh-kFj" secondAttribute="height" multiplier="2:1" id="eTu-V7-yFF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="needleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="needleWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="160"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcOutlineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="arcOutlineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationUnit">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="graduationLength">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="additionalNeedleLength">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eTu-V7-yFF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eTu-V7-yFF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="eTu-V7-yFF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="eTu-V7-yFF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="eTu-V7-yFF"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.85490196078431369" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -269,6 +279,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="7JH-Ui-zMf"/>
+                                <exclude reference="Bsg-wh-SEl"/>
+                                <exclude reference="PRW-V6-sFU"/>
+                                <exclude reference="fVC-r0-c89"/>
                                 <exclude reference="290-Ec-Dt5"/>
                                 <exclude reference="5NH-oO-EIY"/>
                                 <exclude reference="JCV-eN-cYa"/>
@@ -279,16 +293,12 @@
                                 <exclude reference="zIY-MH-dAK"/>
                                 <exclude reference="aoN-tN-sLT"/>
                                 <exclude reference="h0M-p1-TTg"/>
-                                <exclude reference="7JH-Ui-zMf"/>
-                                <exclude reference="Bsg-wh-SEl"/>
-                                <exclude reference="PRW-V6-sFU"/>
-                                <exclude reference="fVC-r0-c89"/>
-                                <exclude reference="BIQ-ia-vFf"/>
-                                <exclude reference="T3e-PH-9IE"/>
                                 <exclude reference="iR3-LI-8UN"/>
                                 <exclude reference="pnl-58-ILR"/>
                                 <exclude reference="qOG-I5-Y5P"/>
                                 <exclude reference="tds-sY-TsD"/>
+                                <exclude reference="BIQ-ia-vFf"/>
+                                <exclude reference="T3e-PH-9IE"/>
                                 <exclude reference="eTx-T9-19Q"/>
                             </mask>
                         </variation>
@@ -297,18 +307,18 @@
                                 <include reference="K7Q-Eh-kFj"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Bsg-wh-SEl"/>
+                                <include reference="PRW-V6-sFU"/>
                                 <include reference="290-Ec-Dt5"/>
                                 <exclude reference="5NH-oO-EIY"/>
                                 <include reference="LNH-Pf-fv4"/>
                                 <include reference="vHB-rJ-ecY"/>
                                 <include reference="aoN-tN-sLT"/>
                                 <include reference="h0M-p1-TTg"/>
-                                <include reference="Bsg-wh-SEl"/>
-                                <include reference="PRW-V6-sFU"/>
-                                <include reference="BIQ-ia-vFf"/>
-                                <include reference="T3e-PH-9IE"/>
                                 <include reference="pnl-58-ILR"/>
                                 <include reference="tds-sY-TsD"/>
+                                <include reference="BIQ-ia-vFf"/>
+                                <include reference="T3e-PH-9IE"/>
                                 <include reference="eTx-T9-19Q"/>
                             </mask>
                         </variation>
@@ -322,30 +332,45 @@
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
                             <mask key="constraints">
+                                <include reference="Bsg-wh-SEl"/>
+                                <include reference="PRW-V6-sFU"/>
                                 <include reference="290-Ec-Dt5"/>
                                 <exclude reference="5NH-oO-EIY"/>
                                 <include reference="LNH-Pf-fv4"/>
                                 <include reference="vHB-rJ-ecY"/>
                                 <include reference="aoN-tN-sLT"/>
                                 <include reference="h0M-p1-TTg"/>
-                                <include reference="Bsg-wh-SEl"/>
-                                <include reference="PRW-V6-sFU"/>
-                                <include reference="BIQ-ia-vFf"/>
-                                <include reference="T3e-PH-9IE"/>
                                 <include reference="pnl-58-ILR"/>
                                 <include reference="tds-sY-TsD"/>
+                                <include reference="BIQ-ia-vFf"/>
+                                <include reference="T3e-PH-9IE"/>
                                 <include reference="eTx-T9-19Q"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="aoN-tN-sLT"/>
-                                <include reference="h0M-p1-TTg"/>
                                 <include reference="7JH-Ui-zMf"/>
                                 <include reference="fVC-r0-c89"/>
+                                <include reference="aoN-tN-sLT"/>
+                                <include reference="h0M-p1-TTg"/>
+                                <include reference="qOG-I5-Y5P"/>
                                 <include reference="BIQ-ia-vFf"/>
                                 <include reference="T3e-PH-9IE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="7JH-Ui-zMf"/>
+                                <include reference="fVC-r0-c89"/>
+                                <include reference="JCV-eN-cYa"/>
+                                <include reference="i6E-OT-lIm"/>
+                                <include reference="jex-aF-KV1"/>
+                                <include reference="aoN-tN-sLT"/>
+                                <include reference="h0M-p1-TTg"/>
+                                <include reference="iR3-LI-8UN"/>
                                 <include reference="qOG-I5-Y5P"/>
+                                <include reference="BIQ-ia-vFf"/>
+                                <include reference="T3e-PH-9IE"/>
                             </mask>
                         </variation>
                     </view>

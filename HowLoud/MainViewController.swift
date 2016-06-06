@@ -43,9 +43,6 @@ class MainViewController: UIViewController {
         gauge.minValue = CGFloat(DecibelMeter.MinValue)
         minValueLabel.text = presenter.decibelMeterMinValue
         maxValueLabel.text = presenter.decibelMeterMaxValue
-        toggleButton.layer.cornerRadius = toggleButton.bounds.size.width / 2
-        toggleButton.layer.borderWidth = 2
-        toggleButton.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     override func didReceiveMemoryWarning() {
