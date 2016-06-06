@@ -128,6 +128,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Peak: ---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-qe-6kI" userLabel="peak">
                                 <rect key="frame" x="265" y="381" width="70" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AhB-en-ega"/>
                                     <constraint firstAttribute="height" constant="21" id="Rcd-Tl-PhB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -135,6 +136,7 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="AhB-en-ega"/>
                                         <exclude reference="Rcd-Tl-PhB"/>
                                     </mask>
                                 </variation>
@@ -143,10 +145,16 @@
                                         <include reference="Rcd-Tl-PhB"/>
                                     </mask>
                                 </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="AhB-en-ega"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="AVG: ---" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLT-uB-W3P" userLabel="avg">
                                 <rect key="frame" x="268" y="340" width="65" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xql-5m-IyU"/>
                                     <constraint firstAttribute="height" constant="21" id="cDE-Do-0g5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -154,12 +162,18 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Xql-5m-IyU"/>
                                         <exclude reference="cDE-Do-0g5"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
                                         <include reference="cDE-Do-0g5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Xql-5m-IyU"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
