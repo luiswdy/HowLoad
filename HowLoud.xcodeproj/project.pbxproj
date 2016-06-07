@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E93746F01CEC727C00092378 /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93746EF1CEC727C00092378 /* Gauge.swift */; };
-		E93746F21CEC7BE500092378 /* Gauge.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93746F11CEC7BE500092378 /* Gauge.xib */; };
+		4C461FBBBF56B35D5C0F3EA0 /* Pods_HowLoud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A570EF10DF2E652CCF0BC5 /* Pods_HowLoud.framework */; };
+		5A9EB434C443A0F9C48F8FF7 /* Pods_HowLoudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5B81FFAA298B00F454837 /* Pods_HowLoudTests.framework */; };
+		DE9E3683D984F6476225F9BE /* Pods_HowLoudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896C172D2B0BCEFC4AA7CB9 /* Pods_HowLoudUITests.framework */; };
 		E96AEB721CFFD19D00BDE609 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96AEB711CFFD19D00BDE609 /* MainPresenter.swift */; };
 		E96AEB781D00057A00BDE609 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E96AEB7A1D00057A00BDE609 /* Localizable.strings */; };
 		E9A90B381CD32A6600FC49A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A90B371CD32A6600FC49A3 /* AppDelegate.swift */; };
@@ -39,9 +40,12 @@
 
 /* Begin PBXFileReference section */
 		48A570EF10DF2E652CCF0BC5 /* Pods_HowLoud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowLoud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B717E209F127D4C01DD75E0 /* Pods-HowLoudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoudTests/Pods-HowLoudTests.release.xcconfig"; sourceTree = "<group>"; };
+		51F5B81FFAA298B00F454837 /* Pods_HowLoudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowLoudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5896C172D2B0BCEFC4AA7CB9 /* Pods_HowLoudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowLoudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9C248E278469B501541C5E /* Pods-HowLoudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoudTests/Pods-HowLoudTests.debug.xcconfig"; sourceTree = "<group>"; };
 		898F91AE8BFE9B85A64A54CA /* Pods-HowLoud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoud/Pods-HowLoud.debug.xcconfig"; sourceTree = "<group>"; };
-		E93746EF1CEC727C00092378 /* Gauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gauge.swift; sourceTree = "<group>"; };
-		E93746F11CEC7BE500092378 /* Gauge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Gauge.xib; sourceTree = "<group>"; };
+		C9F5ACA86A936D23B0411623 /* Pods-HowLoudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoudUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoudUITests/Pods-HowLoudUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E96AEB711CFFD19D00BDE609 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MainPresenter.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E96AEB731D00044600BDE609 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		E96AEB751D00048100BDE609 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		E9A90B591CD32A6600FC49A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9A90B651CD32B4000FC49A3 /* DecibelMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DecibelMeter.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F2C1A0E934E017CF30F1A388 /* Pods-HowLoud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoud.release.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoud/Pods-HowLoud.release.xcconfig"; sourceTree = "<group>"; };
+		FEFA27B1BC631C6C98370A65 /* Pods-HowLoudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowLoudUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HowLoudUITests/Pods-HowLoudUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C461FBBBF56B35D5C0F3EA0 /* Pods_HowLoud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9EB434C443A0F9C48F8FF7 /* Pods_HowLoudTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9E3683D984F6476225F9BE /* Pods_HowLoudUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,10 @@
 			children = (
 				898F91AE8BFE9B85A64A54CA /* Pods-HowLoud.debug.xcconfig */,
 				F2C1A0E934E017CF30F1A388 /* Pods-HowLoud.release.xcconfig */,
+				7D9C248E278469B501541C5E /* Pods-HowLoudTests.debug.xcconfig */,
+				4B717E209F127D4C01DD75E0 /* Pods-HowLoudTests.release.xcconfig */,
+				FEFA27B1BC631C6C98370A65 /* Pods-HowLoudUITests.debug.xcconfig */,
+				C9F5ACA86A936D23B0411623 /* Pods-HowLoudUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				48A570EF10DF2E652CCF0BC5 /* Pods_HowLoud.framework */,
+				51F5B81FFAA298B00F454837 /* Pods_HowLoudTests.framework */,
+				5896C172D2B0BCEFC4AA7CB9 /* Pods_HowLoudUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +152,6 @@
 				E9A90B651CD32B4000FC49A3 /* DecibelMeter.swift */,
 				E9A90B3E1CD32A6600FC49A3 /* Assets.xcassets */,
 				E9A90B431CD32A6600FC49A3 /* Info.plist */,
-				E93746EF1CEC727C00092378 /* Gauge.swift */,
-				E93746F11CEC7BE500092378 /* Gauge.xib */,
 				E96AEB7A1D00057A00BDE609 /* Localizable.strings */,
 			);
 			path = HowLoud;
@@ -170,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A90B5C1CD32A6600FC49A3 /* Build configuration list for PBXNativeTarget "HowLoud" */;
 			buildPhases = (
+				186BAE1E2F5BF3AADA543940 /* [CP] Check Pods Manifest.lock */,
 				E9A90B301CD32A6600FC49A3 /* Sources */,
 				E9A90B311CD32A6600FC49A3 /* Frameworks */,
 				E9A90B321CD32A6600FC49A3 /* Resources */,
+				ED47A87D877E1A6DA9B8DB5E /* [CP] Embed Pods Frameworks */,
+				FA3F92D9EB3C969D9A359E3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A90B5F1CD32A6600FC49A3 /* Build configuration list for PBXNativeTarget "HowLoudTests" */;
 			buildPhases = (
+				6A6D372BB2690C238A53BC69 /* [CP] Check Pods Manifest.lock */,
 				E9A90B441CD32A6600FC49A3 /* Sources */,
 				E9A90B451CD32A6600FC49A3 /* Frameworks */,
 				E9A90B461CD32A6600FC49A3 /* Resources */,
+				8C98170FA64C27CDC7B738E2 /* [CP] Embed Pods Frameworks */,
+				9325078878B70DDD3F7076DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A90B621CD32A6600FC49A3 /* Build configuration list for PBXNativeTarget "HowLoudUITests" */;
 			buildPhases = (
+				D71DDD8F99C0E88293950C65 /* [CP] Check Pods Manifest.lock */,
 				E9A90B4F1CD32A6600FC49A3 /* Sources */,
 				E9A90B501CD32A6600FC49A3 /* Frameworks */,
 				E9A90B511CD32A6600FC49A3 /* Resources */,
+				F0E78949ECDF0BA446F930D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,7 +292,6 @@
 				E9A90B3F1CD32A6600FC49A3 /* Assets.xcassets in Resources */,
 				E96AEB781D00057A00BDE609 /* Localizable.strings in Resources */,
 				E9A90B3D1CD32A6600FC49A3 /* Main.storyboard in Resources */,
-				E93746F21CEC7BE500092378 /* Gauge.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +311,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		186BAE1E2F5BF3AADA543940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6D372BB2690C238A53BC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C98170FA64C27CDC7B738E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowLoudTests/Pods-HowLoudTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9325078878B70DDD3F7076DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowLoudTests/Pods-HowLoudTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71DDD8F99C0E88293950C65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED47A87D877E1A6DA9B8DB5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowLoud/Pods-HowLoud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E78949ECDF0BA446F930D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowLoudUITests/Pods-HowLoudUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA3F92D9EB3C969D9A359E3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HowLoud/Pods-HowLoud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9A90B301CD32A6600FC49A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -301,7 +443,6 @@
 				E9A90B3A1CD32A6600FC49A3 /* MainViewController.swift in Sources */,
 				E9A90B661CD32B4000FC49A3 /* DecibelMeter.swift in Sources */,
 				E9A90B381CD32A6600FC49A3 /* AppDelegate.swift in Sources */,
-				E93746F01CEC727C00092378 /* Gauge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +588,7 @@
 		};
 		E9A90B5D1CD32A6600FC49A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898F91AE8BFE9B85A64A54CA /* Pods-HowLoud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -462,6 +604,7 @@
 		};
 		E9A90B5E1CD32A6600FC49A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C1A0E934E017CF30F1A388 /* Pods-HowLoud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -477,6 +620,7 @@
 		};
 		E9A90B601CD32A6600FC49A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9C248E278469B501541C5E /* Pods-HowLoudTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HowLoudTests/Info.plist;
@@ -489,6 +633,7 @@
 		};
 		E9A90B611CD32A6600FC49A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B717E209F127D4C01DD75E0 /* Pods-HowLoudTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HowLoudTests/Info.plist;
@@ -501,6 +646,7 @@
 		};
 		E9A90B631CD32A6600FC49A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEFA27B1BC631C6C98370A65 /* Pods-HowLoudUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HowLoudUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -512,6 +658,7 @@
 		};
 		E9A90B641CD32A6600FC49A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F5ACA86A936D23B0411623 /* Pods-HowLoudUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HowLoudUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

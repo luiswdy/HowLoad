@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SGauge
 
 class MainViewController: UIViewController {
     private var presenter = MainPresenter()
@@ -16,7 +17,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var peakSplLabel: UILabel!
     @IBOutlet weak var minValueLabel: UILabel!
     @IBOutlet weak var maxValueLabel: UILabel!
-    @IBOutlet weak var gauge: Gauge!
+    @IBOutlet weak var gauge: SGauge!
     
     override func viewDidLoad() {
         super.viewDidLoad()
