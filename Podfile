@@ -6,7 +6,7 @@ target 'HowLoud' do
   use_frameworks!
 
   # Pods for HowLoud
-  pod 'SGauge', :git => 'https://github.com/luiswdy/SGauge.git', :commit => 'b376d12a8d9d635510d45c84307bc4609bb5aac5'
+  pod 'SGauge', '~> 0.0.2'
 
   target 'HowLoudTests' do
     inherit! :search_paths
